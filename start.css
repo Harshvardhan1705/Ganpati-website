@@ -1,0 +1,517 @@
+.box
+{
+    border: 4px solid beige;
+    border-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 100vh;
+    width: 100%;  /* #FFB2D0,#FC6C85, #800020 */
+ }
+
+.container
+{
+    background: linear-gradient(to right, #FFFF33, #FFA500, #FF5F1F, #E41B17);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto; /* tells the browser to automatically adjust left and right margins equally — which centers it */
+    border: 1px solid #FF0000;
+}
+
+.join li {
+    font-size: medium;
+}
+
+.mantra {
+    text-align: center;
+    font-size: x-large;
+    color: #FFD700;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #4B0082;
+}
+
+.mantra p {
+    font-size: xx-large;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    padding: 20px;
+    background: #D891EF;  
+    border: 2px #4B0082;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 30px black; /* this property defines that 0(horizontal offset)-No shift left or right,0(vertical offset)-No shift up or down,20px (blur radius)-Soft shadow spreads out up to 20px,rgba(0,0,0,0.3)-Semi-transparent black (opacity: 0.3)*/
+    transition: transform 0.50s ease; /* this line defines in what speed the image will zoom */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* it defines how much zoom the particular image */
+}
+
+.purple-section{
+    background-color: #D891EF;
+    padding: 20px;
+}
+
+.divider {
+    border: none;
+    border-top: 2px dashed #4B0082;
+    margin: 30px 0;
+    size: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #800020;
+  cursor: pointer;
+}
+
+.join p a:link { /* - The a is the HTML tag (<a> for anchor). :link is a pseudo-class that selects links that haven’t been visited yet.So a:link applies styles to unvisited hyperlinks in your document.*/
+    color: white;
+    background-color: transparent; /* It ensures that the background of the link remains see-through, regardless of any default browser styles, inherited styles, or hover effects. */
+}
+.join p a:visited {
+    color: orangered;
+    background-color: transparent;
+}
+.join p a:active {
+    color: yellow;
+    background-color: transparent;
+}
+
+p a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.box1 {
+  border: 2px double #4B0082; /* Adjust thickness and color as needed */
+  border-radius: 10px;
+  padding: 10px 10px;
+  background-color: #F0FFF0;
+  box-shadow: 10px 10px 15px #580494a3;
+}
+
+.next {
+    background-image: url('https://img.freepik.com/free-vector/flat-ganesh-chaturthi-background_23-2149491422.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+.next p {
+    font-size: medium;
+}
+
+pre
+{
+    font-size: 35px;
+    padding: 10px 10px;
+    margin-right: 350px; /* from right it leaves 20px space */
+    font-weight: bold;
+    color: #045F5F;
+    text-shadow:3px 3px #87CEEB;
+}
+
+.celebration p {
+    font-size: medium;
+}
+
+.card-grid {
+  display: flex;                 /* Enables Flexbox layout to align child cards in rows */
+  flex-wrap: wrap;              /* Allows cards to move to the next line if space runs out */
+  gap: 10px;                    /* Adds 20px spacing between each card in both directions */
+  justify-content: center;      /* Centers all the cards horizontally within the container */
+  padding: 20px;                /* Creates padding around the grid from its parent container */
+}
+
+.card {
+  width: 240px;                 /* Fixed width to maintain uniform card size */
+  border-radius: 12px;          /* Rounds the corners for a softer, modern look */
+  overflow: hidden;             /* Ensures content like images doesn't spill outside card edges */
+  box-shadow: 0 4px 12px black; /* Adds a light shadow for depth and subtle elevation */
+  background-color: #fff;       /* Gives a clean white background to contrast content */
+  text-align: center;           /* Aligns text (heading and paragraph) centrally within the card */
+}
+
+.card:hover {
+  transform: scale(1.05);       /* Slight zoom effect */
+  box-shadow: 0 6px 16px black; /* Deeper shadow on hover */
+  transition: all 0.3s ease;    /* Smooth transition */
+}
+
+.card img {
+  width: 95%;                  /* Stretches image to fit the full card width */
+  height: 160px;                /* Fixed height for consistent image dimensions across cards */
+  object-fit: cover;            /* Crops the image to fill the space, preserving aspect ratio */
+}
+
+.card h3 {
+  margin: 12px 0 6px;           /* Adds spacing above and below the heading */
+  font-size: 1.2rem;            /* Slightly larger font size to highlight the heading */
+}
+
+.card p {
+  font-size: 0.9rem;            /* Slightly smaller font for less visual emphasis */
+  padding: 0 10px 12px;         /* Adds horizontal and bottom spacing inside the paragraph */
+  color: #444;                  /* Soft dark gray text for good readability without harsh contrast */
+}
+
+/* 🎨 Custom Scrollbar Styling — WebKit(WebKit is a browser rendering engine — a core part of a web browser that interprets HTML, CSS, and JavaScript to display web pages on your screen.
+) Browsers Only (Chrome, Safari, Edge) */
+
+::-webkit-scrollbar {              /* Targets the scrollbar itself */
+  width: 10px;              /* Sets the width of the scrollbar */
+}
+
+
+::-webkit-scrollbar-track {        /* Styles the track (background area behind the thumb) */
+  background: #F0FFF0;          /* Light mint background for a soft, clean look */
+}
+
+
+::-webkit-scrollbar-thumb {     /* Styles the draggable part of the scrollbar */
+  background-color: #800020;  /* Deep maroon thumb for strong contrast */
+  border-radius: 10px;          /* Rounded edges for a modern, smooth feel */
+  border: 2px solid #FFD700;  /* Golden border to match your theme and add visual richness */
+}
+
+.arti-container {
+  text-align: center;
+  margin-top: 50px;
+  background-image: url('https://cdn-images.threadless.com/~tms/JessicaAmber/products/3235665/shirt-1690850621-94344e352abe7bf7c7507ead0fdc08b4.jpg?v=3&d=g6NvcHOXk6ZyZXNpemWSy0CAEkkkkkkky0CAEkkkkkkkgaltYXhfc2NhbGXLQAAAAAAAAACTr2NhbnZhc19jZW50ZXJlZJLLQIASSSSSSSTLQIASSSSSSSSBqmJhY2tncm91bmSjZmZmk6ZyZXNpemWRzQZXgJOnb3ZlcmxheZGkfjQyNIOheMy8oXnMvKpiYWNrZ3JvdW5kpmZhZmZiYZOmcmVzaXplkc0DIICTr2NhbnZhc19jZW50ZXJlZJPNAyDNAyCnI2ZmZmZmZoCTpmVuY29kZZKkd2VicFWApWZvcmNlwqlvbmx5X21ldGHC&f=mp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 50px;
+}
+
+.arti-light {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffcc00 0%, #ff6600 60%, transparent 100%);
+  box-shadow: 0 0 20px #ff9900, 0 0 40px #ff6600, 0 0 60px #ff3300; /* Each part follows the format : horizontal-offset vertical-offset( offset refers to how far the shadow is shifted away from the element—either horizontally or vertically.) blur-radius color */
+  animation: flicker 1s infinite; /* This line tells the .arti-light element to : Use the flicker animation,Animate over 1.5 seconds per cycle,Loop the flicker effect endlessly, creating a continuous glowing flame */
+}
+
+@keyframes flicker {  /* 🔥 Flicker animation to simulate a glowing flame or light */
+  /* Start: full brightness and normal size */
+  0% {
+    opacity: 1;            /* fully visible */
+    transform: scale(1);   /* original size */
+  }
+
+  /* Slight dimming and gentle expansion */
+  25% {
+    opacity: 0.85;         /* slightly dimmed */
+    transform: scale(1.03);/* slightly larger */
+  }
+
+  /* Midpoint: brighter and more expanded */
+  50% {
+    opacity: 0.9;          /* medium brightness */
+    transform: scale(1.05);/* more expansion */
+  }
+
+  /* Flicker dips again, subtle contraction */
+  75% {
+    opacity: 0.8;          /* dimmest point */
+    transform: scale(1.02);/* slight shrink from peak */
+  }
+
+  /* End: return to original state */
+  100% {
+    opacity: 1;            /* back to full brightness */
+    transform: scale(1);   /* back to original size */
+  }
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+  font-style: italic;
+  color: #d32f2f;
+}
+
+blockquote {         /* designing for blockquote */
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  border-left: 4px solid #ff6f00;
+  padding-left: 15px;
+  margin: 20px 0;
+  color: #444;
+}
+
+.table p {
+    font-size: medium;
+}
+
+table {
+  width: 100%;
+  border: 2px solid #fff;
+  font-size: medium;
+}
+
+td, th {
+  border: 2px solid #fff;
+  padding: 8px;
+  align-items: center;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: #7D0552;
+  color: #ffffff;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #D6EEEE;
+}
+
+.border {
+  border: 4px solid white;
+  padding: 20px;
+  background-color: white;
+  background-size: 800% 800%;
+  border-radius: 10px;
+}
+
+.table p a:visited {     /* for the styling of the link under the iframe */
+    color: #3D0C02;
+    background-color: transparent;
+}
+
+.table p a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.grid button {
+  background-color: #800020;
+  color: #FFC0C7;
+  margin: 3px;
+}
+
+.moon-reveal {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: inherit; /* inherits your grid section's text color */
+}
+
+.moon-icon {
+  font-size: 40px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#moon-text.hidden {
+  display: none;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Universal box-sizing to prevent overflow */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Set box-sizing globally */
+html {
+  box-sizing: border-box;
+}
+
+/* Body styling (optional, adjust as needed) */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Target only the form without affecting global layout */
+form[action="/submit.php"] {
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Form elements spacing */
+form[action="/submit.php"] div {
+  margin-bottom: 16px;
+}
+
+/* Label styling */
+form[action="/submit.php"] label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input, select, textarea styling */
+form[action="/submit.php"] input[type="text"],
+form[action="/submit.php"] input[type="email"],
+form[action="/submit.php"] input[type="tel"],
+form[action="/submit.php"] select,
+form[action="/submit.php"] textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect */
+form[action="/submit.php"] input:focus,
+form[action="/submit.php"] textarea:focus,
+form[action="/submit.php"] select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Radio buttons inline */
+form[action="/submit.php"] input[type="radio"] {
+  margin-right: 6px;
+  margin-left: 10px;
+}
+
+/* Checkbox spacing */
+form[action="/submit.php"] input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Submit and Reset buttons */
+form[action="/submit.php"] input[type="submit"],
+form[action="/submit.php"] input[type="reset"] {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button colors */
+form[action="/submit.php"] input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+form[action="/submit.php"] input[type="reset"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Hover effects */
+form[action="/submit.php"] input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+form[action="/submit.php"] input[type="reset"]:hover {
+  background-color: #c82333;
+}
+
+path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw 3s ease forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.video {
+  width: 560px;
+  height: 315px;
+  background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(106, 27, 154, 0.25);
+  padding: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(106, 27, 154, 0.35);
+}
+
+.video svg {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.6));
+}
+
+@keyframes auraGlow {
+  0%   { filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.3)); }
+  50%  { filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.8)); }
+  100% { filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.3)); }
+}
+
+.video svg {
+  animation: auraGlow 4s infinite ease-in-out;
+}
+
+.sparkle {
+  animation: blink 2s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
+}
